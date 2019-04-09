@@ -1,6 +1,7 @@
 # vuejs-json-dashboardify
 Create a client-side VueJS component which reads JSON from a GET endpoint and renders into the GovUK Frontend template dynamically including containers, grid rows headers, content and tables. This is to be used to render dynamic content from a static S3-backed server.
 
+![What it looks like](docs/screenshots/dashboardify.png "A dashboardified page")
 ## Setup
 
 If you want to view the example you should run 
