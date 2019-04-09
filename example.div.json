@@ -1,0 +1,73 @@
+{
+  "component": "container",
+  "cssClass": "default",
+  "content": "",
+  "children": [
+    {
+      "component": "h2",
+      "cssClass": "govuk-heading-m",
+      "content": "Test div container"
+    },
+    {
+      "component": "p",
+      "cssClass": "govuk-body-s",
+      "content": "This is just a div."
+    },
+    {
+      "component": "table",
+      "cssClass": "govuk-table",
+      "content": {
+        "chartOptions": {
+          "type": "line",
+          "series": "rows",
+          "x-axis": "Incidents",
+          "y-axis": "Count",
+          "above": "true",
+          "separate": "false",
+          "smoothed": "true",
+          "stacked": "false"
+        },
+        "caption": "Test caption",
+        "headingColumns": [
+          0
+        ],
+        "head": {
+          "columns": [
+            [
+              "category",
+              "heading1",
+              "heading2",
+              "heading3",
+              "heading4"
+            ]
+          ]
+        },
+        "body": {
+          "rows": [
+            [
+              "category1",
+              1,
+              6,
+              3,
+              8
+            ],
+            [
+              "category2",
+              6,
+              4,
+              8,
+              6
+            ],
+            [
+              "category3",
+              8,
+              5,
+              6,
+              3
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

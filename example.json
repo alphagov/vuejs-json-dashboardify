@@ -105,7 +105,8 @@
                   "above": "true",
                   "separate": "false",
                   "smoothed": "false",
-                  "stacked": "false"
+                  "stacked": "false",
+                  "palette": "govuk"
                 },
                 "caption": "Test caption",
                 "headingColumns": [0],

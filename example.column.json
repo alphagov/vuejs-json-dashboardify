@@ -1,0 +1,74 @@
+{
+  "component": "grid",
+  "cssClass": "govuk-grid-column-one-half",
+  "content": "",
+  "children": [
+    {
+      "component": "h2",
+      "cssClass": "govuk-heading-m",
+      "content": "Test grid row column"
+    },
+    {
+      "component": "p",
+      "cssClass": "govuk-body-s",
+      "content": "This is the 1/2 view."
+    },
+    {
+      "component": "table",
+      "cssClass": "govuk-table",
+      "content": {
+        "chartOptions": {
+          "type": "donut",
+          "series": "cols",
+          "x-axis": "Incidents",
+          "y-axis": "Count",
+          "above": "true",
+          "separate": "false",
+          "smoothed": "false",
+          "stacked": "false",
+          "palette": "monochrome"
+        },
+        "caption": "Test caption",
+        "headingColumns": [
+          0
+        ],
+        "head": {
+          "columns": [
+            [
+              "category",
+              "heading1",
+              "heading2",
+              "heading3",
+              "heading4"
+            ]
+          ]
+        },
+        "body": {
+          "rows": [
+            [
+              "category1",
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              "category2",
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              "category3",
+              6,
+              5,
+              4,
+              3
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

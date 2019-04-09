@@ -19,7 +19,7 @@
 </head>
 <body class="govuk-template__body">
 <header class="govuk-header " role="banner">
-  <div class="govuk-header__container govuk-width-container">
+  <div class="govuk-header__container govuk-header__container--full-width">
     <div class="govuk-header__logo">
       <a href="#" class="govuk-header__link govuk-header__link--homepage">
         <span class="govuk-header__logotype">
@@ -46,6 +46,14 @@
 <div  id="app">
     <main class="govuk-main-wrapper" id="main-content" role="main">
         <json-dashboardify-url-element source="/example.json"></json-dashboardify-url-element>
+        <div class="govuk-header__container--full-width">
+            <div class="govuk-grid-row">
+                <json-dashboardify-url-element source="/example.column.json"></json-dashboardify-url-element>
+                <div class="govuk-grid-column-one-half">
+                    <json-dashboardify-url-element source="/example.div.json"></json-dashboardify-url-element>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
