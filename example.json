@@ -1,0 +1,131 @@
+{
+  "component": "container",
+  "cssClass": "govuk-header__container--full-width",
+  "children": [
+    {
+      "component": "grid",
+      "cssClass": "govuk-grid-row",
+      "content": "",
+      "children": [
+        {
+          "component": "grid",
+          "cssClass": "govuk-grid-column-full",
+          "content": "",
+          "children": [
+            {
+              "component": "h1",
+              "cssClass": "govuk-heading-l",
+              "content": "Test dashboard"
+            },
+            {
+              "component": "p",
+              "cssClass": "govuk-body-s",
+              "content": "This is some explanatory content to describe what's on the dashboard."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "grid",
+      "cssClass": "govuk-grid-row",
+      "content": "",
+      "children": [
+        {
+          "component": "grid",
+          "cssClass": "govuk-grid-column-two-thirds",
+          "content": "",
+          "children": [
+            {
+              "component": "h2",
+              "cssClass": "govuk-heading-m",
+              "content": "Test dashboard main pane"
+            },
+            {
+              "component": "p",
+              "cssClass": "govuk-body-s",
+              "content": "This is the 2/3 view."
+            },
+            {
+              "component": "table",
+              "cssClass": "govuk-table",
+              "content": {
+                "chartOptions": {
+                  "type": "bar",
+                  "series": "rows",
+                  "x-axis": "Incidents",
+                  "y-axis": "Count",
+                  "above": "true",
+                  "separate": "false",
+                  "smoothed": "false",
+                  "stacked": "false"
+                },
+                "caption": "Test caption",
+                "headingColumns": [0],
+                "head": {
+                  "columns": [
+                    ["category", "heading1", "heading2", "heading3", "heading4"]
+                  ]
+                },
+                "body": {
+                  "rows": [
+                    ["category1", 1, 2, 3, 4],
+                    ["category2", 3, 4, 5, 6],
+                    ["category3", 6, 5, 4, 3]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "component": "grid",
+          "cssClass": "govuk-grid-column-one-third",
+          "content": "",
+          "children": [
+            {
+              "component": "h2",
+              "cssClass": "govuk-heading-m",
+              "content": "Test dashboard sidebar"
+            },
+            {
+              "component": "p",
+              "cssClass": "govuk-body-s",
+              "content": "This is a sidebar."
+            },
+            {
+              "component": "table",
+              "cssClass": "govuk-table",
+              "content": {
+                "chartOptions": {
+                  "type": "pie",
+                  "series": "rows",
+                  "x-axis": "Incidents",
+                  "y-axis": "Count",
+                  "above": "true",
+                  "separate": "false",
+                  "smoothed": "false",
+                  "stacked": "false"
+                },
+                "caption": "Test caption",
+                "headingColumns": [0],
+                "head": {
+                  "columns": [
+                    ["category", "heading1", "heading2", "heading3", "heading4"]
+                  ]
+                },
+                "body": {
+                  "rows": [
+                    ["category1", 1, 2, 3, 4],
+                    ["category2", 3, 4, 5, 6],
+                    ["category3", 6, 5, 4, 3]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

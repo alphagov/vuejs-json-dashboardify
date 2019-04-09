@@ -1,0 +1,6 @@
+$govuk-global-styles: true;
+
+$govuk-assets-path: "/lib/assets/";
+
+@import "node_modules/govuk-frontend/all";
+@import "node_modules/pe-charts/lib/sass/pe";
