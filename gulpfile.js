@@ -1,6 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 
 gulp.task('copy_assets.static', function() {
   return gulp.src(['node_modules/govuk-frontend/assets/**'])
@@ -37,6 +38,21 @@ gulp.task('sass.dashboardify', function () {
   return gulp.src('lib/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('lib/css'));
+});
+
+gulp.task('concat.js', function() {
+    return gulp.src([
+        './node_modules/d3/dist/d3.min.js',
+        './node_modules/c3/c3.min.js',
+        './node_modules/vue/dist/vue.js',
+        './node_modules/vue-resource/dist/vue-resource.min.js',
+        './lib/js/all.js',
+        './lib/js/common.js',
+        './lib/js/pe-table-chart.js',
+        './lib/js/json-dashboardify.js'
+    ])
+    .pipe(concat('dist.js'))
+    .pipe(gulp.dest('./lib/js'));
 });
 
 gulp.task('default', gulp.series('copy_assets', 'sass.gov', 'sass.dashboardify'));

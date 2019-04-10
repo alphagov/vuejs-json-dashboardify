@@ -8,9 +8,6 @@
   },
   "dependencies": {
     "govuk-frontend": "^2.9.0",
-    "gulp": "^4.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
     "lodash": "~> 4.17.5",
     "minimatch": "~> 3.0.2",
     "pe-charts": "git@github.com:alphagov/pe-charts.git#firebreak",
@@ -21,6 +18,10 @@
     "test": "snyk test"
   },
   "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-concat": "^2.6.1",
     "snyk": "^1.100.1"
   }
 }
