@@ -24,6 +24,7 @@ sort.
 
 ```HTML
 <json-dashboardify-url-element 
+    group="unique-within-page"
     source="/example.json">
 </json-dashboardify-url-element>
 ```
