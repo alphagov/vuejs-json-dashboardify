@@ -55,4 +55,9 @@ gulp.task('concat.js', function() {
     .pipe(gulp.dest('./lib/js'));
 });
 
+gulp.task('watch', function() {
+  gulp.watch('lib/sass/*.scss', gulp.series('sass.gov', 'sass.dashboardify'));
+  gulp.watch('lib/js/*.js', gulp.series('concat.js'));
+});
+
 gulp.task('default', gulp.series('copy_assets', 'sass.gov', 'sass.dashboardify', 'concat.js'));
