@@ -1,0 +1,27 @@
+{
+  "name": "vuejs-json-dashboardify",
+  "description": "Create a client-side VueJS component which reads JSON from a GET endpoint and renders into the GovUK Frontend template dynamically including containers, grid rows headers, content and tables. This is to be used to render dynamic content from a static S3-backed server.",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "^8.9.1"
+  },
+  "dependencies": {
+    "govuk-frontend": "^2.9.0",
+    "lodash": "~> 4.17.5",
+    "minimatch": "~> 3.0.2",
+    "pe-charts": "git@github.com:alphagov/pe-charts.git#firebreak",
+    "vue": "^2.5.17",
+    "vue-resource": "^1.5.1"
+  },
+  "scripts": {
+    "test": "snyk test"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "snyk": "^1.100.1"
+  }
+}

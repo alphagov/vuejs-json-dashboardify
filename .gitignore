@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+
+# npm
+node_modules
+# govuk assets
+lib/css/*.css
+lib/assets
+lib/js/*.js
+!lib/js/json-dashboardify.js
