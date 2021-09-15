@@ -1,0 +1,8 @@
+demo:
+  build: .
+  command: bash
+  stdin_open: true
+  volumes:
+    - .:/usr/src
+  ports:
+    - 8000:8000

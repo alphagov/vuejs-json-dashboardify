@@ -15,13 +15,17 @@
     "vue-resource": "^1.5.3"
   },
   "scripts": {
-    "test": "snyk test"
+    "snyk": "snyk test",
+    "server": "http-server . -a 0.0.0.0 -p 8000",
+    "e2e": "nightwatch -c nightwatch/nightwatch.conf.js nightwatch/"
   },
   "devDependencies": {
+    "geckodriver": "^2.0.4",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.1.1",
+    "nightwatch": "^1.7.9",
     "snyk": "^1.704.0"
   }
 }

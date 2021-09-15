@@ -67,3 +67,6 @@ lib/css/*.css
 lib/assets
 lib/js/*.js
 !lib/js/json-dashboardify.js
+
+geckodriver.log
+tests_output/
