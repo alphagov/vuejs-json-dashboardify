@@ -19,7 +19,7 @@ Alternatively you can run locally without docker
 Then you can run the code with an npm http server
 `http-server . -a 127.0.0.1 -p 8000`
 
-# End-to-end tests
+## End-to-end tests
 
 I've made a start on some end-to-end tests using nightwatch.
 
